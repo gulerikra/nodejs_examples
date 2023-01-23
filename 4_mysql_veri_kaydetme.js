@@ -6,10 +6,9 @@ var con = mysql.createConnection({
   database: 'mysql_ikra'
   });
   
-  // connect 
- con.connect(function(err){
+con.connect(function(err){
     if(err) throw err;
-    console.log('MySql Connected ....');
+    console.log('MySql Baglanıyor ....');
 
     //uygulamda oluşturulan tablonun içeriğini yazma
     var sql = "INSERT INTO bilgi (id,ad,soyad,yas) VALUES ?";
